@@ -1,0 +1,62 @@
+#container {
+background-color: #f4f7fc;
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+}
+#header {
+background-color: #7eaefc;
+font-family: Impact;
+height: 75px;
+font-size:24px;
+}
+#bluepane {
+background-color: #386bbc;
+float: left;
+height: 401px;
+padding-right: 10px;
+padding-left: 10px;
+color: #f9f9f9;
+}
+#body {
+height: 365px;
+background-color: #f4f7fc;
+}
+#footer {
+background-color: grey;	
+}
+#min {
+position: relative;
+right: 170px;
+top: 200px;
+}
+#max {
+position: relative;
+right: 130px;
+top: 200px;	
+}
+#output {
+position: relative;
+left: 200px;
+bottom: 180px;
+font-size: 200px;
+}
+.whitetext {
+padding-top: 10px;
+text-align: center;
+font-size: 26px;
+font-family: Bookman;
+}
+.header {
+text-align: right;
+padding-top: 25px;
+padding-right: 10px;
+}
+.randomnum {
+position: relative;
+right: 140px;
+top: 200px;
+}
+body {
+background-color:#424242;
+}
