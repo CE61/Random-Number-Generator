@@ -6,7 +6,9 @@
 	<link rel="stylesheet type="text/css" href="style.css" />
 	<script>
 	function Generate() {
-		var random = Math.floor(Math.random()*101);
+		var minimum = document.getElementById('min').value;
+		var maximum = document.getElementById('max').value;
+		var random = Math.floor(Math.random()*((Number(maximum))-(Number(minimum)))+(Number(minimum)));
 		document.getElementById('output').innerHTML = random;
 		}
 	</script>
@@ -18,11 +20,15 @@
 	    <h1 class="header">Random Number Generator</h1>
 	  </div>
 	  <div id="bluepane">
-	    <p class="whitetext"><strong>Click 'Generate'<br> to receive<br> a random<br> value from<br>0-100.</strong></p>
+	    <p class="whitetext"><strong>Click 'Generate'<br> to receive<br> a random<br> value from<br><br>to</strong></p>
 	  </div>
 	  <div id="body">
-	    <button class="randomnum" onClick="return Generate()">Generate</button>
-		<p id="output">#</p>
+		<form>
+		  <input type="text" id="min" name="minimum" size="4">
+		  <input type="text" id="max" name="maximum" size="4">
+		</form>
+	    <button class="randomnum" onClick="Generate()">Generate</button>
+		<p id="output"></p>
 	  </div>
 	  <div id="footer">
 	    <p align="right"> Sharon Inc. ® 2019 </p>

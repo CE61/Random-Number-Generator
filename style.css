@@ -25,13 +25,24 @@ background-color: #f4f7fc;
 #footer {
 background-color: grey;	
 }
+#min {
+position: relative;
+right: 170px;
+top: 200px;
+}
+#max {
+position: relative;
+right: 130px;
+top: 200px;	
+}
 #output {
 position: relative;
-left: 150px;
-bottom: 150px;
+left: 200px;
+bottom: 180px;
 font-size: 200px;
 }
 .whitetext {
+padding-top: 10px;
 text-align: center;
 font-size: 26px;
 font-family: Bookman;
